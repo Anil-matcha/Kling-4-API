@@ -165,6 +165,7 @@ Once you're comfortable with the basics, explore the full list below. Every reso
 - **[experimental]** [cold-memory-kernel](https://github.com/jim-688/cold-memory-kernel) by [jim-688](https://github.com/jim-688) — Architecture governance framework for Hermes: layered memory (Hot/Cold/Config/Runtime), evidence-driven iteration (Hypothesis/Proposal/Observation), and capability-driven design. Documentation repo with runnable demo.
 - **[beta]** [custom-dangerous-patterns](https://github.com/scross01/hermes-custom-dangerous-patterns-plugin) by [scross01](https://github.com/scross01) — Adds additional terminal command patterns that require approval before execution. Extends the built-in dangerous-command guard with user-defined patterns, works with the standard approve-once/session/always/deny flow, and ships `hermes custom-dangerous-patterns` CLI commands to manage them.
 - **[beta]** [cron-status-alert](https://github.com/pnascimento9596/cron-status-alert) by [pnascimento9596](https://github.com/pnascimento9596) — DMs you when a scheduled Hermes job fails to deliver to Discord or runs overdue, and confirms recovery. Distinct from cronalytics (cost/usage/health); watches delivery-receipt status. Adds /cron-status.
+- **[experimental]** [Bot HQ](https://github.com/the-spirit-realm/hermes-bot-hq) by [the-spirit-realm](https://github.com/the-spirit-realm) — Hermes desktop plugin: sidebar fleet page for local bots (profiles) plus per-bot Home dashboards. Install: `hermes plugins install the-spirit-realm/hermes-bot-hq`.
 
 ### Skill Registries & Discovery
 
