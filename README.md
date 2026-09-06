@@ -146,6 +146,7 @@ Once you're comfortable with the basics, explore the full list below. Every reso
 
 ### Plugins
 
+- **[beta]** [Artifact Relay](https://github.com/eloktev/hermes-artifact-relay) by [Egor Loktev](https://github.com/eloktev) — Publishes long Markdown and standalone HTML from Hermes to a companion [self-hosted service](https://github.com/eloktev/artifact-relay), with separate publishing and viewing credentials and sandboxed HTML rendering.
 - **[production]** [Agora](https://github.com/yzy806806/agora) by [yzy806806](https://github.com/yzy806806) — Multi-agent team plugin. 8 role templates, event-driven discussions with voting, heartbeat-driven project management, kanban task dispatch, AGENTS.md shared context, dashboard UI. 17 tools, 3 hooks.
 - **[beta]** [plur](https://github.com/plur-ai/plur) by [plur-ai](https://github.com/plur-ai) — Shared memory layer for AI agents using an open engram format (YAML). Useful for persistent learning patterns across Hermes sessions.
 - **[experimental]** [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) — USDC and x402 payment plugin. Lets Hermes send and receive payments with configurable spending limits and approval flows.
