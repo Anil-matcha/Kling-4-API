@@ -109,6 +109,7 @@ Once you're comfortable with the basics, explore the full list below. Every reso
 - **[beta]** [news-api-skills](https://github.com/currentslab/news-api-skills) by [currentslab](https://github.com/currentslab) — Cross-platform AgentSkills-compatible skills for the Currents News API, with installable packages for Hermes and other agent runtimes.
 - **[beta]** [NotFair](https://github.com/nowork-studio/NotFair) by [NoWork Studio](https://github.com/nowork-studio) — Host-agnostic `SKILL.md` workflows for SEO, GEO, Google Ads, and Meta Ads, with MCP connectors for live account analysis and approval-gated changes.
 - **[beta]** [internet-court-skill](https://github.com/internet-court/internet-court-skill) by [Internet Court Consortium](https://github.com/internet-court) — Agent-to-agent commerce skill: natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution. Install: `hermes skills tap add internet-court/internet-court-skill`.
+- **[experimental]** [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness/tree/main/skills/hyperconsciousness) by [louis030195](https://github.com/louis030195) — CLI skill for discovering local skills, PKM notes, encrypted knowledge and opaque credential capabilities.
 
 ### agentskills.io Ecosystem
 
