@@ -64,6 +64,12 @@ print(result)
 
 The image URL must be publicly accessible to the generation service.
 
+## Prompt recipes
+
+For more controlled generations, write prompts as short shot briefs: describe the subject and setting, specify one main action, give the camera a clear path, and state what should stay consistent. See the [prompt recipe guide](docs/prompt-recipes.md) for original product, social-video, and cinematic examples.
+
+The guide was informed by the prompt categories and production-planning ideas in [flaqai/awesome-kling-4-0](https://github.com/flaqai/awesome-kling-4-0). Its prompt text and scenarios are newly written for this repository. The SDK currently sends requests to Kling 3.0 routes; check the live MuAPI documentation for supported controls before relying on model-specific features.
+
 ## cURL
 
 ```bash
