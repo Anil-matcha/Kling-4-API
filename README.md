@@ -215,6 +215,7 @@ Once you're comfortable with the basics, explore the full list below. Every reso
 - **[experimental]** [portainer-stack-hermes](https://github.com/ellickjohnson/portainer-stack-hermes) by [ellickjohnson](https://github.com/ellickjohnson) — Docker Compose + Portainer + ttyd web terminal. Deploy Hermes and reach it from any browser.
 - **[experimental]** [hermes-autonomous-server](https://github.com/JackTheGit/hermes-autonomous-server) by [JackTheGit](https://github.com/JackTheGit) — Headless Hermes deployment with systemd and cron on Linux servers. Runs unattended.
 - **[beta]** [RestlessAgents](https://restlessagents.com/) by [Tom Oehlrich](https://github.com/tomoehlrich) — Comparison directory for managed and self-hosted VPS hosting options across OpenClaw and Hermes Agent.
+- **[production]** [SEAOTTER](https://seaotter.dev/) by [Ryan Martin](https://github.com/Ryan-Ray-Martin) — Managed Hermes hosting on Google Cloud (seaotter.dev, not seaotter.ai): isolated agents, MCP from Cursor/Claude/Codex, 14-day Hobby trial then $69/mo, no VPS or SSH.
 - **[beta]** [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) — One-command bootstrap from a fresh clone to a working multi-platform Hermes deployment: free models, 29 plugins pre-wired, gateway configured. Not a fork — an opinionated setup script.
 
 <br>
