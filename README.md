@@ -4,6 +4,9 @@
 
 ### Python SDK and practical video-generation examples for MuAPI
 
+<p align="center"><a href="https://youtu.be/8Ua5lRiePFg"><img src="https://i.ytimg.com/vi/8Ua5lRiePFg/maxresdefault.jpg" width="720"></a></p>
+<p align="center"><a href="https://youtu.be/8Ua5lRiePFg"><b>▶ Watch: How to Access Kling 4.0 API - Best Alternative to Seedance 2 </b></a></p>
+
 [![Powered by MuAPI](https://img.shields.io/badge/Powered%20by-MuAPI-6366f1?style=flat-square)](https://muapi.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
