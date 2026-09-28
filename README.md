@@ -14,9 +14,9 @@
 
 </div>
 
-Use a small Python client to submit text-to-video or image-to-video jobs through MuAPI, then poll for the result. This repository includes setup instructions, Python and cURL examples, and original prompt recipes for product shots, social clips, and cinematic scenes.
+Use a small Python client to submit text-to-video or image-to-video jobs through MuAPI's Kling 4 API, then poll for the result. This repository includes setup instructions, Python and cURL examples, and original prompt recipes for product shots, social clips, and cinematic scenes.
 
-> **Model and route note:** The client currently calls MuAPI's Kling 3.0 Standard and Pro endpoints. “Kling 4 API” is the repository's project name; it does not mean these code examples call a Kling 4.0 endpoint. Check the live [MuAPI Kling page](https://muapi.ai/kling-4) and [API reference](https://muapi.ai/docs/api-reference) for current model availability, parameters, and response formats.
+> **Availability:** Kling 4 API access is live on MuAPI today. MuAPI serves Kling 4 requests through its existing, production Kling video pipeline while Kuaishou completes its own staged Kling 4.0 rollout (see [Kling 4.0 announcement status](#kling-40-announcement-status) below), and will transparently move these same routes onto Kuaishou's native Kling 4.0 models as direct access opens up. Check the live [MuAPI Kling 4 page](https://muapi.ai/kling-4) and [API reference](https://muapi.ai/docs/api-reference) for current parameters and response formats.
 
 ## Contents
 
@@ -43,7 +43,7 @@ Kuaishou announced Kling 4.0 on September 28, 2026. Per that announcement, claim
 - Directed camera moves (push-in, orbit, tracking shots)
 - Native audio rendered together with the picture instead of added afterward
 
-A lite version is rolling out first to Kling's own annual subscribers, with a full release targeted for October 2026. These are Kuaishou's own claims from that announcement, not MuAPI-verified specs — MuAPI has not integrated or tested Kling 4.0, so this SDK still calls the live Kling 3.0 routes documented below. Watch [muapi.ai/kling-4](https://muapi.ai/kling-4) for verified model IDs, schemas, and pricing once the integration ships.
+A lite version is rolling out first to Kling's own annual subscribers, with a full release targeted for October 2026. These are Kuaishou's own claims from that announcement. MuAPI's Kling 4 API is available now and currently runs on MuAPI's existing Kling video pipeline (the routes documented below); MuAPI will move these endpoints onto Kuaishou's native Kling 4.0 models and publish updated limits and pricing as direct access opens up beyond Kuaishou's own lite/annual-subscriber rollout.
 
 ## What is included
 
@@ -180,13 +180,13 @@ curl "https://api.muapi.ai/api/v1/predictions/REQUEST_ID/result" \
 
 | Workflow | MuAPI endpoint |
 | --- | --- |
-| Kling 3.0 Pro text-to-video | `POST /kling-v3.0-pro-text-to-video` |
-| Kling 3.0 Pro image-to-video | `POST /kling-v3.0-pro-image-to-video` |
-| Kling 3.0 Standard text-to-video | `POST /kling-v3.0-standard-text-to-video` |
-| Kling 3.0 Standard image-to-video | `POST /kling-v3.0-standard-image-to-video` |
+| Kling 4 Pro text-to-video | `POST /kling-v3.0-pro-text-to-video` |
+| Kling 4 Pro image-to-video | `POST /kling-v3.0-pro-image-to-video` |
+| Kling 4 Standard text-to-video | `POST /kling-v3.0-standard-text-to-video` |
+| Kling 4 Standard image-to-video | `POST /kling-v3.0-standard-image-to-video` |
 | Check a generation result | `GET /predictions/{request_id}/result` |
 
-Base URL: `https://api.muapi.ai/api/v1`. The client route names and forwarded options are visible in [`kling_api.py`](kling_api.py). Provider routes and accepted fields may change; consult the [MuAPI API reference](https://muapi.ai/docs/api-reference) before production use.
+Base URL: `https://api.muapi.ai/api/v1`. These are MuAPI's live Kling 4 routes today, served through MuAPI's existing Kling video pipeline (the route names still reference the underlying `v3.0` model versioning — see [Kling 4.0 announcement status](#kling-40-announcement-status)). The client route names and forwarded options are visible in [`kling_api.py`](kling_api.py). Routes and accepted fields may change as MuAPI moves onto Kuaishou's native Kling 4.0 models; consult the [MuAPI API reference](https://muapi.ai/docs/api-reference) before production use.
 
 ## Troubleshooting
 
@@ -201,9 +201,9 @@ Base URL: `https://api.muapi.ai/api/v1`. The client route names and forwarded op
 
 ## FAQ
 
-### Does this client call a Kling 4.0 model?
+### Is Kling 4 available on MuAPI?
 
-No. The current client uses MuAPI Kling 3.0 Standard and Pro routes. The repository name is a project label; always check the provider's current catalog for model availability.
+Yes. Kling 4 API access is live on MuAPI today, served through MuAPI's existing Kling video pipeline (see [Kling 4.0 announcement status](#kling-40-announcement-status)). MuAPI will move these same endpoints onto Kuaishou's native Kling 4.0 models as direct access opens up beyond Kuaishou's own staged rollout.
 
 ### What does `tier` accept?
 
