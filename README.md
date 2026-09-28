@@ -21,6 +21,7 @@ Use a small Python client to submit text-to-video or image-to-video jobs through
 ## Contents
 
 - [What is included](#what-is-included)
+- [Kling 4.0 announcement status](#kling-40-announcement-status)
 - [Quick start](#quick-start)
 - [Text-to-video](#text-to-video)
 - [Image-to-video](#image-to-video)
@@ -31,6 +32,18 @@ Use a small Python client to submit text-to-video or image-to-video jobs through
 - [FAQ](#faq)
 - [Related projects](#related-projects)
 - [License](#license)
+
+## Kling 4.0 announcement status
+
+Kuaishou announced Kling 4.0 on September 28, 2026. Per that announcement, claimed capabilities include:
+
+- Single-pass clips up to 30 seconds, double Kling 3.0's 15-second Director Mode cap
+- A much higher reference ceiling — up to 50 text/image/video reference files, versus roughly a dozen previously
+- Up to 10 keyframes for guiding continuity across connected shots
+- Directed camera moves (push-in, orbit, tracking shots)
+- Native audio rendered together with the picture instead of added afterward
+
+A lite version is rolling out first to Kling's own annual subscribers, with a full release targeted for October 2026. These are Kuaishou's own claims from that announcement, not MuAPI-verified specs — MuAPI has not integrated or tested Kling 4.0, so this SDK still calls the live Kling 3.0 routes documented below. Watch [muapi.ai/kling-4](https://muapi.ai/kling-4) for verified model IDs, schemas, and pricing once the integration ships.
 
 ## What is included
 
