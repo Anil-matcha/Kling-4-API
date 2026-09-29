@@ -1,6 +1,6 @@
 <div align="center">
 
-# Kling 4 API
+# Kling 4 API & Kling 4.0 Flash API
 
 ### Python SDK and practical video-generation examples for MuAPI
 
@@ -17,7 +17,7 @@
 
 </div>
 
-Use a small Python client to submit text-to-video or image-to-video jobs through MuAPI's Kling 4 API, then poll for the result. This repository includes setup instructions, Python and cURL examples, and original prompt recipes for product shots, social clips, and cinematic scenes.
+Use a small Python client to submit text-to-video or image-to-video jobs through MuAPI's Kling 4 API, then poll for the result. This repository includes setup instructions, Python and cURL examples, and original prompt recipes for product shots, social clips, and cinematic scenes. It covers the **Kling 4 API** and tracks availability for the **Kling 4.0 API**, **Kling 4 Flash API**, and **Kling 4.0 Flash API** search intents. See the status below before integrating: Flash access in the Kling app does not by itself mean a public API endpoint is available.
 
 > **Availability:** Kling 4 API access is live on MuAPI today. MuAPI serves Kling 4 requests through its existing, production Kling video pipeline while Kuaishou completes its own staged Kling 4.0 rollout (see [Kling 4.0 announcement status](#kling-40-announcement-status) below), and will transparently move these same routes onto Kuaishou's native Kling 4.0 models as direct access opens up. Check the live [MuAPI Kling 4 page](https://muapi.ai/kling-4) and [API reference](https://muapi.ai/docs/api-reference) for current parameters and response formats.
 
@@ -25,6 +25,7 @@ Use a small Python client to submit text-to-video or image-to-video jobs through
 
 - [What is included](#what-is-included)
 - [Kling 4.0 announcement status](#kling-40-announcement-status)
+- [Kling 4.0 Flash API status](#kling-40-flash-api-status)
 - [Quick start](#quick-start)
 - [Text-to-video](#text-to-video)
 - [Image-to-video](#image-to-video)
@@ -48,6 +49,14 @@ Kuaishou announced Kling 4.0 on September 28, 2026. Per that announcement, claim
 
 A lite version is rolling out first to Kling's own annual subscribers, with a full release targeted for October 2026. These are Kuaishou's own claims from that announcement. MuAPI's Kling 4 API is available now and currently runs on MuAPI's existing Kling video pipeline (the routes documented below); MuAPI will move these endpoints onto Kuaishou's native Kling 4.0 models and publish updated limits and pricing as direct access opens up beyond Kuaishou's own lite/annual-subscriber rollout.
 
+## Kling 4.0 Flash API status
+
+As of September 29, 2026, this repository does not document a callable Kling 4.0 Flash API endpoint, and MuAPI's live Kling routes listed below do not identify themselves as Flash routes. Kling 4.0 Flash availability in the Kling app or for selected subscribers should not be treated as confirmation of public API access. Do not use the standard or Pro routes in this SDK expecting Flash-specific model behavior.
+
+For current API availability, model identifiers, parameters, and pricing, check the [MuAPI Kling 4 page](https://muapi.ai/kling-4) and the [live API reference](https://muapi.ai/docs/api-reference). This status section will need updating when a documented Flash endpoint becomes available.
+
+The terms **Kling 4 API** and **Kling 4.0 API** are often used for the broader Kling 4 generation API, while **Kling 4 Flash API** and **Kling 4.0 Flash API** refer to Flash-specific access. This SDK documents the currently listed MuAPI Standard and Pro routes; it does not claim those routes invoke Flash.
+
 ## What is included
 
 - A lightweight `KlingAPI` Python client for submitting jobs and polling results.
@@ -67,8 +76,8 @@ A lite version is rolling out first to Kling's own annual subscribers, with a fu
 ### Install
 
 ```bash
-git clone https://github.com/Anil-matcha/Kling-4-API.git
-cd Kling-4-API
+git clone https://github.com/Anil-matcha/Kling-4.0-Flash-API.git
+cd Kling-4.0-Flash-API
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -207,6 +216,14 @@ Base URL: `https://api.muapi.ai/api/v1`. These are MuAPI's live Kling 4 routes t
 ### Is Kling 4 available on MuAPI?
 
 Yes. Kling 4 API access is live on MuAPI today, served through MuAPI's existing Kling video pipeline (see [Kling 4.0 announcement status](#kling-40-announcement-status)). MuAPI will move these same endpoints onto Kuaishou's native Kling 4.0 models as direct access opens up beyond Kuaishou's own staged rollout.
+
+### Is there a Kling 4.0 Flash API endpoint?
+
+This repository does not currently provide a verified Kling 4.0 Flash API endpoint. The available MuAPI routes are the standard and Pro workflows in [Supported routes](#supported-routes); confirm the live API reference for any newer Flash model ID or route before building an integration.
+
+### Does the Kling 4 API support Kling 4 Flash?
+
+The current Kling 4 API routes in this repository do not identify a Flash model. That applies to searches for both “Kling 4 Flash API” and “Kling 4.0 Flash API”: check MuAPI's live API reference for an explicitly documented Flash route before sending production requests.
 
 ### What does `tier` accept?
 
